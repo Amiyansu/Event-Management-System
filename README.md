@@ -6,8 +6,8 @@
         information.
     </p>
 <div>
-        <img src="readme_image/home.png" alt="Homepage Image" width="500">
-        <img src="readme_image/log.png" alt="Login Page Image" width="500">
+        <img src="readme_image/home.png" alt="Homepage Image">
+        <img src="readme_image/log.png" alt="Login Page Image">
     </div>
     <h2>Project Overview</h2>
 
