@@ -5,7 +5,10 @@
         the MERN stack. It allows NGOs to manage events, view upcoming and previous events, and update their profile
         information.
     </p>
-
+<div>
+        <img src="readme_image/home.png" alt="Homepage Image" width="500">
+        <img src="readme_image/log.png" alt="Login Page Image" width="500">
+    </div>
     <h2>Project Overview</h2>
 
     <p>The system consists of two main components:</p>
