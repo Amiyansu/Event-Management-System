@@ -1,4 +1,15 @@
-<h1>NGO Event Management System (MERN Stack)</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Event Management System (MERN Stack)</title>
+</head>
+
+<body>
+
+    <h1>NGO Event Management System (MERN Stack)</h1>
 
     <p>
         This is a fully functional <strong>Event Management System</strong> designed specifically for NGOs, built using
@@ -153,3 +164,7 @@ PORT=9002
     <p><strong>Amiyansu Patra</strong></p>
 
     <p>Feel free to reach out with any questions or suggestions!</p>
+
+</body>
+
+</html>
