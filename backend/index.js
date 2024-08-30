@@ -146,7 +146,7 @@ const NGO = mongoose.model('NGO', ngoSchema);
 const Events = mongoose.model('Events', eventSchema);
 
 app.post("/loginvol", async (req, res) => {
-    console.log("logged in as a volunteer")
+    console.log("logged in as a User")
     const { email, passwd } = req.body
     const user = await Volunteer.findOne({ email: email })
 
@@ -158,7 +158,7 @@ app.post("/loginvol", async (req, res) => {
             console.log(user.email)
             const final = user._id
             res.send({ message: "Login Successful", token, user })
-            //token,user
+            
         } else {
             res.send({ message: "Password incorrect" })
         }
@@ -274,7 +274,7 @@ app.post("/updatengo", (req, res) => {
             // console.log(user)
             if (req.body.email != null && req.body.email.length > 0 && req.body.email)
                 if (err) return res.json({ success: false, err });
-            res.status(200).json({ user, message: "Ngo Details Updated Successfully." })
+            res.status(200).json({ user, message: "Admin Details Updated Successfully." })
         }
     )
 
@@ -300,7 +300,7 @@ app.post("/updatevol", (req, res) => {
             // console.log(user)
             if (req.body.email != null && req.body.email.length > 0 && req.body.email)
                 if (err) return res.json({ success: false, err });
-            res.status(200).json({ user, message: "Volunteer Details Updated Successfully. " })
+            res.status(200).json({ user, message: "User Details Updated Successfully. " })
         }
     )
 
@@ -705,7 +705,7 @@ app.delete("/deleteevent/:eventId", async (req, res) => {
         res.status(200).json({ message: "Event deleted successfully." });
     } catch (error) {
         console.error("Error deleting event:", error);
-        res.status(500).json({ message: "Faile to delete event. Please try again." });
+        res.status(500).json({ message: "Failed to delete event. Please try again." });
     }
 })
 
